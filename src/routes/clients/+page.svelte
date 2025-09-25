@@ -1,7 +1,7 @@
 <script>
   let clients = [
     { id: 1, name: 'Client A' },
-    { id: 2, name: 'Client B' },
+    { id: 2, name: 'Client B' }
   ];
 </script>
 
@@ -14,3 +14,13 @@
     {/each}
   </ul>
 </main>
+
+<style>
+  @media (min-width: 1024px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+</style>
